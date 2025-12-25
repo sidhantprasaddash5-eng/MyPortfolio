@@ -1,0 +1,333 @@
+/* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background: linear-gradient(to right, #ffecd2, #fcb69f);
+  padding: 20px;
+  min-height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  display: none; /* Hide all cards by default */
+}
+
+.card.active {
+  display: block; /* Show the active card */
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  background: #fff4e6;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+li:hover {
+  background-color: #ffd4b2;
+  transform: scale(1.01);
+}
+
+label {
+  margin-top: 10px;
+  display: block;
+  color: #333;
+  font-weight: bold;
+}
+
+input, select {
+  padding: 10px;
+  width: 100%;
+  margin-top: 5px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+}
+
+button {
+  background-color: #ff6f61;
+  color: white;
+  padding: 12px;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #e6574c;
+}
+
+/* Payment Section Styles */
+#payment-section {
+  background-color: #fff; /* White background for payment section */
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#payment-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+#payment-section label {
+  color: #333;
+}
+
+#payment-section input {
+  padding: 12px;
+  width: 100%;
+  margin-top: 5px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+#payment-section button {
+  margin-top: 10px;
+  background-color: #ff6f61;
+  color: white;
+  padding: 12px;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#payment-section button:hover {
+  background-color: #e6574c;
+}
+
+/* Registration Form Styles */
+.registration-form {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.registration-form h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.registration-form label {
+  color: #333;
+}
+
+.registration-form input {
+  padding: 12px;
+  width: 100%;
+  margin-top: 5px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.registration-form button {
+  margin-top: 10px;
+  background-color: #ff6f61;
+  color: white;
+  padding: 12px;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.registration-form button:hover {
+  background-color: #e6574c;
+}
+
+/* Confirmation Page Styles */
+#confirmation-page {
+  background-color: #d4edda; /* Light green background for success */
+  color: #155724; /* Dark green text for success message */
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-top: 20px;
+  display: none; /* Hidden by default, shown after successful booking */
+}
+
+#confirmation-page h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #155724;
+}
+
+#confirmation-page p {
+  font-size: 16px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+#confirmation-page .success-icon {
+  font-size: 50px;
+  color: #28a745; /* Success green */
+  margin-bottom: 15px;
+}
+
+#confirmation-page .details {
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: left;
+  margin-top: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+#confirmation-page .details strong {
+  color: #333;
+}
+
+#confirmation-page .details p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+#confirmation-page button {
+  margin-top: 20px;
+  background-color: #28a745; /* Success green */
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#confirmation-page button:hover {
+  background-color: #218838; /* Darker green for hover effect */
+}
+
+
+.front-page {
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+  background: linear-gradient(to bottom, #a8d8ea, #fcb69f);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.road {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background: #333;
+}
+
+.bus {
+  position: absolute;
+  bottom: 50px;
+  width: 100px;
+  height: 50px;
+  background: #ff6f61;
+  border-radius: 10px;
+  animation: moveBus 5s linear infinite;
+}
+
+.wheel {
+  position: absolute;
+  bottom: -10px;
+  width: 20px;
+  height: 20px;
+  background: #000;
+  border-radius: 50%;
+}
+
+.wheel.left {
+  left: 10px;
+}
+
+.wheel.right {
+  right: 10px;
+}
+
+@keyframes moveBus {
+  0% {
+    left: -120px;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+/* Seat Map Styles */
+.seat-map {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 seats per row */
+  gap: 10px; /* Space between seats */
+  margin-top: 20px;
+}
+
+.seat {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.seat.selected {
+  background-color: #ff6f61; /* Highlight selected seat */
+  color: white;
+}
+
+.seat.booked {
+  background-color: #ccc; /* Style for booked seats */
+  cursor: not-allowed; /* Disable pointer for booked seats */
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .seat-map {
+    grid-template-columns: repeat(2, 1fr); /* 2 seats per row on small screens */
+  }
+}
+
