@@ -1,0 +1,1199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AIR - TV WIN</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Navbar</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">📺 TV WIN</div>
+    
+    <div class="hamburger" id="hamburger">
+      <i class="fas fa-bars"></i>
+    </div>
+
+    <nav class="nav-links" id="nav-links">
+      <a href="#">Home</a>
+      <a href="tvshow.html">TV Shows</a>
+      <a href="movies.html">Movies</a>
+      <a href="watchFree.html">Watch Free</a>
+      <a href="liveTv.html">Live TV</a>
+      <a href="kids.html">Kids</a>
+    </nav>
+
+    <div class="actions">
+      <i class="fas fa-search"></i>
+      
+      <button id="loginBtn">Login</button>
+      <script>
+    const loginBtn = document.getElementById("loginBtn");
+    const isLoggedIn = localStorage.getItem("isLoggedIn");
+
+    if (isLoggedIn === "true") {
+        loginBtn.textContent = "Logout";
+        loginBtn.onclick = function() {
+            localStorage.setItem("isLoggedIn", "false");
+            window.location.reload();
+        };
+    } else {
+        loginBtn.textContent = "Login";
+        loginBtn.onclick = function() {
+            window.location.href = "login.html";
+        };
+    }
+</script>
+      <button>Subscribe</button>
+      
+    </div>
+  </header>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+
+
+
+
+
+   <section class="hero-section">
+    <div class="overlay"></div>
+    <div class="content">
+      <!-- <img src="https://etv-win-image.akamaized.net/etvwin/exclusives/shows42655/air/images/air-384x216.png" alt="AIR Logo" class="air-logo" /> -->
+      <div class="tags">
+        <span>🔴 Drama</span>
+        <span>🔴 Comedy</span>
+        <span>🔴 Coming Of Age</span>
+      </div>
+      <div class="buttons">
+        <button class="watch">▶ Watch Now</button>
+        <button class="list">➕ My List</button>
+      </div>
+      <p class="description">
+        Three boys. One elite college. A system that <br>
+        demands perfection. Arjun, Imran, and Raju <br>
+        come from different worlds but share one <br>
+        secret: they don’t want to be here. As <br>
+        rebellion sparks friendship, the...
+      </p>
+    </div>
+
+    <!-- <img src="https://i.ibb.co/6b5m6pr/sample-character.png" alt="AIR Characters" class="characters" /> -->
+
+    <div class="bottom-logos">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKrUlGoG2J09xHqEwpZRrcVsmaCh6-6cWsCg&s" />
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvRk6zyqwJWGd0ezNTW2kGqvHVUg6uA8igsg&s" />
+    </div>
+  </section>
+
+
+
+
+
+<!--1st Part-->
+
+ <section class="before-tv-section">
+    <div class="container">
+      <h2>Before TV</h2>
+      <div class="card-row">
+        <!-- Card 1 -->
+        <div class="card">
+          <div class="lock-icon">🔒</div>
+          <img src="https://akamaividz2.zee5.com/image/upload/w_336,h_504,c_scale,f_webp,q_auto:eco/resources/0-6-214/portrait/1920x770a27c28d8315348b887d7e2a2bfdaebae877d54bfda824f719d663ee2d4b12de1.jpg" alt="Thumbnail" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">S25 | Epi 38 | 15 Jul 25</div>
+        </div>
+
+        <!-- Repeat Cards -->
+        <div class="card">
+          <div class="lock-icon">🔒</div>
+          <img src="https://akamaividz2.zee5.com/image/upload/w_336,h_504,c_scale,f_webp,q_auto:eco/resources/0-6-366/portrait/1920x7706cd83849afd34f9daab41538795856235969abf787494430b6bd75c84227121c.jpg" alt="Thumbnail" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">Epi 14 | 15 Jul 25</div>
+        </div>
+
+        <div class="card">
+          <div class="lock-icon">🔒</div>
+          <img src="https://akamaividz2.zee5.com/image/upload/w_336,h_504,c_scale,f_webp,q_auto:eco/resources/0-6-127/portrait/1920x7702527e01fd3454fdeb17ff3da10014136697cb7bd6d6e46ea93716d6bf728bda3.jpg" alt="Thumbnail" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">Epi 152 | 15 Jul 25</div>
+        </div>
+
+        <div class="card">
+          <div class="lock-icon">🔒</div>
+          <img src="https://akamaividz2.zee5.com/image/upload/w_336,h_504,c_scale,f_webp,q_auto:eco/resources/0-6-3510/portrait/1920x770f04d507d682247f8b22841c0b7b775d4.jpg" alt="Thumbnail" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">Epi 488 | 15 Jul 25</div>
+        </div>
+
+        <div class="card">
+          <div class="lock-icon">🔒</div>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7RlqLEaaN5hUeTuMAgclYaIrj1_SDJ9U17w&s" alt="Thumbnail" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">Epi 218 | 15 Jul 25</div>
+        </div>
+
+        <div class="card">
+          <div class="lock-icon">🔒</div>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ0g97mk320UHcjnNRffoP2Gf_fjixNhuGEw&s" alt="Thumbnail" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">Epi 218 | 15 Jul 25</div>
+        </div>
+
+        <div class="card">
+          <div class="lock-icon">🔒</div>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrsDZYXLqfjfMYJES_bjIqyQjI-_hABbiyag&s" alt="Thumbnail" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">Epi 218 | 15 Jul 25</div>
+        </div>
+      </div>
+    </div>
+  </section>
+        
+
+      
+<!--2nd part-->
+<section>
+      
+    <div class="container">
+
+      <h2>AIR Prabhanjanam</h2>
+      <div class="card-row">
+        <div class="card small-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHf77T-uPPE1XyEvzVmCAh02j5ockMz5hNJA&s" alt="AIR" />
+          <div class="episode-info">FIRST EPISODE FREE</div>
+        </div>
+        <div class="card small-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKLkms15lYJvhJ_LOghuK4nBkJYVSjZOG9vQ&s" alt="AIR Trailer" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Trailer | 03 Jul 25</div>
+        </div>
+        <div class="card small-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjZ6GhuD9Igh2YW-lNHfa5goCa-YcLURA7aQ&s" alt="AIR Teaser" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Teaser | 03 Jul 25</div>
+        </div>
+        <!-- Add more cards as needed -->
+
+
+                <div class="card small-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTGs9qss0W4QkG0ZpqE9AFLRdoGLuRTvvJBg&s" alt="AIR Teaser" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Teaser | 03 Jul 25</div>
+        </div>
+
+
+      </div>
+    </section>
+
+<!--3rd part-->
+<section>
+ <div class="container">
+
+      <h2>Recently Added</h2>
+      <div class="card-row">
+        <div class="card small-card">
+          <img src="https://akamaividz2.zee5.com/image/upload/w_336,h_504,c_scale,f_webp,q_auto:eco/resources/0-0-1z5650119/portrait/1920x7704fbbb155284540c1a621252ff70b44b74b705b50d46147099b42d469ae267e97.jpg" alt="AIR" />
+          <div class="episode-info">FIRST EPISODE FREE</div>
+        </div>
+        <div class="card small-card">
+          <img src="https://m.media-amazon.com/images/M/MV5BMDAxNWNmNGEtYTJhYi00NTdjLWExZDgtZWYyM2FhODdmMzBmXkEyXkFqcGc@._V1_.jpg" alt="AIR Trailer" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Trailer | 03 Jul 25</div>
+        </div>
+        <div class="card small-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmJcc5NKXhe_fq08PlhEQNBrtctg7OBnzeJA&s" alt="AIR Teaser" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Teaser | 03 Jul 25</div>
+        </div>
+          
+
+                <div class="card small-card">
+          <img src="https://images.filmibeat.com/img/popcorn/list_items/telugu-blockbusters-re-releasing-in-march-2025-check-the-full-list-20250227152143-6327.jpg" alt="AIR Teaser" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Teaser | 03 Jul 25</div>
+        </div>
+
+                <div class="card small-card">
+          <img src="https://assets.gadgets360cdn.com/pricee/assets/product/202501/Mazaka_poster_1_1738131702.jpg" alt="AIR Teaser" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Teaser | 03 Jul 25</div>
+        </div>
+
+                <div class="card small-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKTfvVZEiTUr87iwcRInakMfF8oxKKXndezA&s" alt="AIR Teaser" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Teaser | 03 Jul 25</div>
+        </div>
+
+
+                <div class="card small-card">
+          <img src="https://assets.gadgets360cdn.com/pricee/assets/product/202312/Saindhav_1703231520.jpg" alt="AIR Teaser" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Teaser | 03 Jul 25</div>
+        </div>
+        </div>
+        </div>
+        </section>
+
+      <!---4th Part-->
+      <section>
+
+    <div class="container">
+
+      <h2>Trending Now</h2>
+      <div class="card-row">
+        <div class="card small-card">
+          <img src="https://assets.gadgets360cdn.com/pricee/assets/product/202407/KHEL-KHEL-MEIN_1722235439.jpg" alt="AIR" />
+          <div class="episode-info">FIRST EPISODE FREE</div>
+        </div>
+        <div class="card small-card">
+          <img src="https://m.media-amazon.com/images/M/MV5BZGI5NzVmNDktZWY2Ni00ZGMwLTlhMzctNzJhYTgzZmQ2ZjNjXkEyXkFqcGc@._V1_.jpg" alt="AIR Trailer" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Trailer | 03 Jul 25</div>
+        </div>
+        <div class="card small-card">
+          <img src="https://assets.gadgets360cdn.com/pricee/assets/product/202412/PARAM_SUNDARI_p1_1735039425.jpg" alt="AIR Teaser" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Teaser | 03 Jul 25</div>
+        </div>
+          
+
+                <div class="card small-card">
+          <img src="https://preview.redd.it/top-10-most-watched-indian-movies-and-series-on-netflix-v0-n3n9v92n3b7c1.jpg?width=640&crop=smart&auto=webp&s=815e86b87ec34beb8de8da5aa4888326be78841b" alt="AIR Teaser" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Teaser | 03 Jul 25</div>
+        </div>
+
+                <div class="card small-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdMMZQvY5VvoObqqbXehA63bb8GKVfcoeKQw&s" alt="AIR Teaser" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Teaser | 03 Jul 25</div>
+        </div>
+
+                <div class="card small-card">
+          <img src="https://preview.redd.it/top-10-most-watched-indian-movies-and-series-on-netflix-v0-z67h1ryo3b7c1.jpg?width=640&crop=smart&auto=webp&s=34380b10586a6f70d521cae60adc1dd1b501be41" alt="AIR Teaser" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Teaser | 03 Jul 25</div>
+        </div>
+
+
+                <div class="card small-card">
+          <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC/et00444869-mmsqlgbfcx-portrait.jpg" alt="AIR Teaser" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Teaser | 03 Jul 25</div>
+        </div>
+        </div>
+        </div>
+  </section>
+
+
+<!--5th Part-->
+  <section>
+        <div class="container">
+
+      <h2>Katha Sudha - Sunday Stories</h2>
+      <div class="card-row">
+        <div class="card small-card">
+          <img src="https://resizing.flixster.com/mgpd_2i91VWa6hdnV9bo35rYpJ4=/fit-in/705x460/v2/https://resizing.flixster.com/HGwMEOU55W4dcwUdYSZc3O4BaIg=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzU1OTBiZDVmLTRlNmYtNGJlYy04OGNkLTg2OTNiZTJiN2I3MC5qcGc=" alt="AIR" />
+          <div class="episode-info">FIRST EPISODE FREE</div>
+        </div>
+        <div class="card small-card">
+          <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202305/fburnqxagae1hr8-three_four.jpg?VersionId=JdKq8G9hS5FXQ4gA.YDA1.VzH2hWzpv4" alt="AIR Trailer" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Trailer | 03 Jul 25</div>
+        </div>
+        <div class="card small-card">
+          <img src="https://assets.gadgets360cdn.com/pricee/assets/product/202308/Sagileti_Katha_1691397009.jpg" alt="AIR Teaser" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Teaser | 03 Jul 25</div>
+        </div>
+          
+
+                <div class="card small-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVVVGGsu-vXc9KlL01mDYfWb14c6ca7hd47w&s" alt="AIR Teaser" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Teaser | 03 Jul 25</div>
+        </div>
+
+                <div class="card small-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxeXOLZrtnCly223_2ULhsojsU2cj5-3hYTw&s" alt="AIR Teaser" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Teaser | 03 Jul 25</div>
+        </div>
+
+                <div class="card small-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsG7g96O-f-oGZTUh3iGWkk3gNQo6OfuA4Ag&s" alt="AIR Teaser" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Teaser | 03 Jul 25</div>
+        </div>
+
+
+                <div class="card small-card">
+          <img src="https://upload.wikimedia.org/wikipedia/en/4/48/Idhe_Maa_Katha.jpg" alt="AIR Teaser" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Teaser | 03 Jul 25</div>
+        </div>
+        </div>
+        </div>
+
+
+
+  </section>
+
+
+
+    <section>
+        <div class="container">
+
+      <h2>Raining Entertainers</h2>
+      <div class="card-row">
+        <div class="card small-card">
+          <img src="https://m.media-amazon.com/images/M/MV5BZjk1ODM1ZWQtNjcwYy00Mzc1LTg3YTktYWU0YWQwOGJlMzg4XkEyXkFqcGc@._V1_.jpg" alt="AIR" />
+          <div class="episode-info">FIRST EPISODE FREE</div>
+        </div>
+        <div class="card small-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZjI03ioy1Okk29Y8kr46E-d6A9sgr7pl4QQ&s" alt="AIR Trailer" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Trailer | 03 Jul 25</div>
+        </div>
+        <div class="card small-card">
+          <img src="https://i.pinimg.com/originals/84/c9/50/84c9504c1bdbfc617ff3b07b1e580b90.jpg" alt="AIR Teaser" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Teaser | 03 Jul 25</div>
+        </div>
+          
+
+                <div class="card small-card">
+          <img src="https://upload.wikimedia.org/wikipedia/en/e/e5/Atrangi_Re_film_poster.jpg" alt="AIR Teaser" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Teaser | 03 Jul 25</div>
+        </div>
+
+
+
+                <div class="card small-card">
+          <img src="https://i.pinimg.com/736x/cc/11/38/cc113808c625663a7c88c490032afb72.jpg" alt="AIR Teaser" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Teaser | 03 Jul 25</div>
+        </div>
+        </div>
+        </div>
+
+
+
+  </section>
+
+
+
+
+  <!--6th Part-->
+  <section>
+  <div class="container">
+    <h2>Win Orginals</h2>
+    <div class="kids-card-row">
+      <div class="kids-card">
+        <img src="https://etv-win-image.akamaized.net/etvwin/exclusives/shows/air/subcategories/season1/episodes/airteaser/80173/air-teaser-Air_30Sec-384x216.jpg" alt="Abhimanyu" />
+        <div class="kids-card-title"></div>
+      </div>
+      <div class="kids-card">
+        <img src="https://igimage.indiaglitz.com/telugu/gallery/movies/lovestory2020/main.jpg" alt="Bal Bahubali" />
+        <div class="kids-card-title"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+    <section>
+        <div class="container">
+
+      <h2>Cult Classics</h2>
+      <div class="card-row">
+        <div class="card small-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0Fn_cOe3Ty3fUil5AGBD20LOfS8uv-uRgCA&s" alt="AIR" />
+          <div class="episode-info">FIRST EPISODE FREE</div>
+        </div>
+        <div class="card small-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnVsFXlIxM-Ve4X09R1gvDIe0YG-1RYjnqlA&s" alt="AIR Trailer" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Trailer | 03 Jul 25</div>
+        </div>
+        <div class="card small-card">
+          <img src="https://i.pinimg.com/170x/27/21/d7/2721d73d4bb296237d39029f57f450f6.jpg" alt="AIR Teaser" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Teaser | 03 Jul 25</div>
+        </div>
+          
+
+                <div class="card small-card">
+          <img src="https://m.media-amazon.com/images/I/81tPvf5ywvL._UF894,1000_QL80_.jpg" alt="AIR Teaser" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Teaser | 03 Jul 25</div>
+        </div>
+
+                <div class="card small-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXfDUER4FagNlD3UhRVjFfouUZbmLxZm3zgw&s" alt="AIR Teaser" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Teaser | 03 Jul 25</div>
+        </div>
+
+                <div class="card small-card">
+          <img src="https://www.tallengestore.com/cdn/shop/products/JohnyMeraNaam-DevAnand-ClassicHindiMoviePoster_f7e18fd3-27a1-4cba-ba50-34a718055624.jpg?v=1705134344" alt="AIR Teaser" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Teaser | 03 Jul 25</div>
+        </div>
+
+
+                <div class="card small-card">
+          <img src="https://i.pinimg.com/736x/91/36/d6/9136d61e07fbe5bf7bfa9a881a0da383.jpg" alt="AIR Teaser" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Teaser | 03 Jul 25</div>
+        </div>
+        </div>
+        </div>
+
+
+
+  </section>
+
+
+      <section>
+        <div class="container">
+
+      <h2>Block Buster Hits</h2>
+      <div class="card-row">
+        <div class="card small-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8LKTjw4XR0CR9GkwmMt2hBAoJWXuuVcAFRw&s" alt="AIR" />
+          <div class="episode-info">FIRST EPISODE FREE</div>
+        </div>
+        <div class="card small-card">
+          <img src="https://m.media-amazon.com/images/M/MV5BZGI0ZGQ3MTQtYjllYy00MTkyLTg4ZWUtOTc1MmI2ZDE4OTYyXkEyXkFqcGc@._V1_.jpg" alt="AIR Trailer" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Trailer | 03 Jul 25</div>
+        </div>
+        <div class="card small-card">
+          <img src="https://m.media-amazon.com/images/M/MV5BMDM4OWFhYjEtNTE5Yy00NjcyLTg5N2UtZDQwNDZlYjlmNDU5XkEyXkFqcGc@._V1_.jpg" alt="AIR Teaser" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Teaser | 03 Jul 25</div>
+        </div>
+          
+
+                <div class="card small-card">
+          <img src="https://m.media-amazon.com/images/M/MV5BMTM3ZGUwYTEtZTI5NS00ZmMyLTk2YmQtMWU4YjlhZTI3NjRjXkEyXkFqcGc@._V1_.jpg" alt="AIR Teaser" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Teaser | 03 Jul 25</div>
+        </div>
+
+                <div class="card small-card">
+          <img src="https://m.media-amazon.com/images/M/MV5BM2Q2Nzk0OGYtNzE1Yy00NTA2LTg4ZWUtM2QyZWZlOGYwYTdiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="AIR Teaser" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Teaser | 03 Jul 25</div>
+        </div>
+
+                <div class="card small-card">
+          <img src="https://m.media-amazon.com/images/M/MV5BZThmNDg1NjUtNWJhMC00YjA3LWJiMjItNmM4ZDQ5ZGZiN2Y2XkEyXkFqcGc@._V1_.jpg" alt="AIR Teaser" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Teaser | 03 Jul 25</div>
+        </div>
+
+
+                <div class="card small-card">
+          <img src="https://m.media-amazon.com/images/M/MV5BMGQ1MzkzZDYtMzg1YS00ODE0LTgyYTYtNDdkOWNjMDFhMmZjXkEyXkFqcGc@._V1_.jpg" alt="AIR Teaser" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Teaser | 03 Jul 25</div>
+        </div>
+        </div>
+        </div>
+
+
+
+  </section>
+
+
+
+      <section>
+        <div class="container">
+
+      <h2>Award Winning</h2>
+      <div class="card-row">
+        <div class="card small-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP1IbdU_E4mAh0N51OPno2VXHMTghosCq36g&s" alt="AIR" />
+          <div class="episode-info">FIRST EPISODE FREE</div>
+        </div>
+        <div class="card small-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAuUptO7aEzI5oZaEGtZsEKzPej4IdJ13t8Q&s" alt="AIR Trailer" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Trailer | 03 Jul 25</div>
+        </div>
+        <div class="card small-card">
+          <img src="https://compote.slate.com/images/77440fdf-a599-4fd1-90fc-cc619aa7419d.jpg?crop=590%2C885%2Cx0%2Cy0" alt="AIR Teaser" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Teaser | 03 Jul 25</div>
+        </div>
+          
+
+                <div class="card small-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGpf_ml4XROeZGDyKMr-TDCWxAshlfysTY9A&s" alt="AIR Teaser" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Teaser | 03 Jul 25</div>
+        </div>
+
+        </div>
+        </div>
+        </div>
+
+
+
+  </section>
+
+
+    <section>
+  <div class="container">
+    <h2>ETV Bal Bharat Kids
+</h2>
+    <div class="kids-card-row">
+      <div class="kids-card">
+        <img src="https://etv-win-image.akamaized.net/etvwin/exclusives/shows42655/air/images/air-384x216.png" alt="Abhimanyu" />
+        <div class="kids-card-title"></div>
+      </div>
+      <div class="kids-card">
+        <img src="https://etv-win-image.akamaized.net/etvwin/exclusives/shows/air/subcategories/season1/episodes/airteaser/80173/air-teaser-Air_30Sec-384x216.jpg" alt="Bal Bahubali" />
+        <div class="kids-card-title"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+    <div class="backgroundimage">
+      <h2>Tv Shows</h2>
+      <img src="https://wallpapercave.com/wp/wp6907899.jpg" alt="Banner">
+    </div>
+  </section>
+  <br>
+  <br>
+</section>
+
+
+
+
+
+
+
+
+      <section>
+        <div class="container">
+
+      <h2>Latest News</h2>
+      <div class="card-row">
+        <div class="card small-card">
+          <img src="https://i.ytimg.com/vi/ZeukNjINwjo/hq720.jpg?v=684a2800&sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAWHvq_oEVVG4L5dvYKG0dfHR_nCA" alt="AIR" />
+          <div class="episode-info">FIRST EPISODE FREE</div>
+        </div>
+        <div class="card small-card">
+          <img src="https://i.ytimg.com/vi/ZeukNjINwjo/hq720.jpg?v=684a2800&sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAWHvq_oEVVG4L5dvYKG0dfHR_nCA" alt="AIR Trailer" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Trailer | 03 Jul 25</div>
+        </div>
+        <div class="card small-card">
+          <img src="https://i.ytimg.com/vi/ZeukNjINwjo/hq720.jpg?v=684a2800&sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAWHvq_oEVVG4L5dvYKG0dfHR_nCA" alt="AIR Teaser" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Teaser | 03 Jul 25</div>
+        </div>
+          
+
+                <div class="card small-card">
+          <img src="https://i.ytimg.com/vi/ZeukNjINwjo/hq720.jpg?v=684a2800&sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAWHvq_oEVVG4L5dvYKG0dfHR_nCA" alt="AIR Teaser" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Teaser | 03 Jul 25</div>
+        </div>
+
+                <div class="card small-card">
+          <img src="https://i.ytimg.com/vi/ZeukNjINwjo/hq720.jpg?v=684a2800&sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAWHvq_oEVVG4L5dvYKG0dfHR_nCA" alt="AIR Teaser" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Teaser | 03 Jul 25</div>
+        </div>
+
+                <div class="card small-card">
+          <img src="https://i.ytimg.com/vi/ZeukNjINwjo/hq720.jpg?v=684a2800&sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAWHvq_oEVVG4L5dvYKG0dfHR_nCA" alt="AIR Teaser" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Teaser | 03 Jul 25</div>
+        </div>
+
+
+                <div class="card small-card">
+          <img src="" alt="AIR Teaser" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Teaser | 03 Jul 25</div>
+        </div>
+        </div>
+        </div>
+ </section>
+
+
+       <section>
+        <div class="container">
+
+      <h2>Live TV</h2>
+      <div class="card-row">
+        <div class="card small-card">
+          <img src="https://etv-win-image.akamaized.net/etvwin/live/channel/37856/etv-abhiruchi-540x720.jpg" alt="AIR" />
+          <div class="episode-info">FIRST EPISODE FREE</div>
+        </div>
+        <div class="card small-card">
+          <img src="https://etv-win-image.akamaized.net/etvwin/live/channel/37856/etv-abhiruchi-540x720.jpg" alt="AIR Trailer" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Trailer | 03 Jul 25</div>
+        </div>
+        <div class="card small-card">
+          <img src="https://etv-win-image.akamaized.net/etvwin/live/channel/37856/etv-abhiruchi-540x720.jpg" alt="AIR Teaser" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Teaser | 03 Jul 25</div>
+        </div>
+          
+
+                <div class="card small-card">
+          <img src="https://etv-win-image.akamaized.net/etvwin/live/channel/37856/etv-abhiruchi-540x720.jpg" alt="AIR Teaser" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Teaser | 03 Jul 25</div>
+        </div>
+
+                <div class="card small-card">
+          <img src="https://etv-win-image.akamaized.net/etvwin/live/channel/37856/etv-abhiruchi-540x720.jpg" alt="AIR Teaser" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Teaser | 03 Jul 25</div>
+        </div>
+
+                <div class="card small-card">
+          <img src="https://etv-win-image.akamaized.net/etvwin/live/channel/37856/etv-abhiruchi-540x720.jpg" alt="AIR Teaser" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Teaser | 03 Jul 25</div>
+        </div>
+
+
+                <div class="card small-card">
+          <img src="https://etv-win-image.akamaized.net/etvwin/live/channel/37856/etv-abhiruchi-540x720.jpg" alt="AIR Teaser" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Teaser | 03 Jul 25</div>
+        </div>
+        </div>
+        </div>
+ </section>
+
+
+       <section>
+        <div class="container">
+
+      <h2>Recommended For You</h2>
+      <div class="card-row">
+        <div class="card small-card">
+          <img src="https://townsquare.media/site/442/files/2018/01/hangover.jpg?w=780&q=75" alt="AIR" />
+          <div class="episode-info">FIRST EPISODE FREE</div>
+        </div>
+        <div class="card small-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsowS_luKA3nIXN9GD-jm9ZfQCXFMiis3iWw&s" alt="AIR Trailer" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Trailer | 03 Jul 25</div>
+        </div>
+        <div class="card small-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY8URwJpaVJi77qwH5iluJTzUicS1euEZAhA&s" alt="AIR Teaser" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Teaser | 03 Jul 25</div>
+        </div>
+          
+
+                <div class="card small-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwLIJEzy88iIKR9QDgENvB6dern588e-2SwQ&s" alt="AIR Teaser" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Teaser | 03 Jul 25</div>
+        </div>
+
+                <div class="card small-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFOlIjLWmLX317Ew7-BMuFqzFpvFTO9TyOCw&s" alt="AIR Teaser" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Teaser | 03 Jul 25</div>
+        </div>
+
+                <div class="card small-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD5NEpUgjsMpk6A21q8d5A_3i91Fl0giDD5Q&s" alt="AIR Teaser" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Teaser | 03 Jul 25</div>
+        </div>
+
+
+                <div class="card small-card">
+          <img src="https://resizing.flixster.com/MJ0fiopQl9n2wRDioRcVpu9yg5c=/206x305/v2/https://resizing.flixster.com/b2510EWqdzW5e4vPqLugyERtOCU=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzg5ZWIwMWM0LWVlMjEtNDgyYi1iMmNmLTQ2OGViOWUxZDBmYy5qcGc=" alt="AIR Teaser" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Teaser | 03 Jul 25</div>
+        </div>
+        </div>
+        </div>
+ </section>
+
+      <section>
+        <div class="container">
+
+      <h2>Comedy</h2>
+      <div class="card-row">
+        <div class="card small-card">
+          <img src="https://marathimovieworld.com/images/Majhya-Baikocha-Priyankar-Marathi-Movie-Poster.jpg" alt="AIR" />
+          <div class="episode-info">FIRST EPISODE FREE</div>
+        </div>
+        <div class="card small-card">
+          <img src="https://townsquare.media/site/442/files/2018/01/hangover.jpg?w=780&q=75" alt="AIR Trailer" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Trailer | 03 Jul 25</div>
+        </div>
+        <div class="card small-card">
+          <img src="https://i.pinimg.com/736x/b1/de/a2/b1dea22245e014cc686c22e1a55f35c4.jpg" alt="AIR Teaser" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Teaser | 03 Jul 25</div>
+        </div>
+          
+
+                <div class="card small-card">
+          <img src="https://i.pinimg.com/736x/4a/1f/fb/4a1ffbd05098999fd06357d4b41e5e40.jpg" alt="AIR Teaser" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Teaser | 03 Jul 25</div>
+        </div>
+
+                <div class="card small-card">
+          <img src="https://data1.ibtimes.co.in/photo/en/full/50878/kadalai-upcoming-tamil-comedy-film-directed-by-p-sagayasuresh-produced-under-udhayam.jpg?w=751" alt="AIR Teaser" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Teaser | 03 Jul 25</div>
+        </div>
+
+                <div class="card small-card">
+          <img src="https://m.media-amazon.com/images/I/81sJzoqnypL._UF1000,1000_QL80_.jpg" alt="AIR Teaser" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Teaser | 03 Jul 25</div>
+        </div>
+
+
+                <div class="card small-card">
+          <img src="https://intheposter.com/cdn/shop/products/so-this-is-30-in-the-poster-1.jpg?v=1733910582" alt="AIR Teaser" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Teaser | 03 Jul 25</div>
+        </div>
+        </div>
+        </div>
+ </section>
+
+      <section>
+        <div class="container">
+
+      <h2>Romance</h2>
+      <div class="card-row">
+        <div class="card small-card">
+          <img src="https://i.pinimg.com/736x/b9/c9/e1/b9c9e1bd2ba7c82680e92a28251470bd.jpg" alt="AIR" />
+          <div class="episode-info">FIRST EPISODE FREE</div>
+        </div>
+        <div class="card small-card">
+          <img src="https://intheposter.com/cdn/shop/products/the-perfect-match-in-the-poster-1.jpg?v=1733910571" alt="AIR Trailer" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Trailer | 03 Jul 25</div>
+        </div>
+        <div class="card small-card">
+          <img src="https://template.canva.com/EAFBbU9WSF8/1/0/566w-3hZeh0PcSvw.jpg" alt="AIR Teaser" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Teaser | 03 Jul 25</div>
+        </div>
+          
+
+                <div class="card small-card">
+          <img src="https://i.pinimg.com/736x/ea/93/3f/ea933f6cd902168bc06046241be9bece.jpg" alt="AIR Teaser" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Teaser | 03 Jul 25</div>
+        </div>
+
+                <div class="card small-card">
+          <img src="https://www.boxofficemovies.in/now/wp-content/uploads/RAABTA-movie-poster-starring-Kriti-Sanon-and-Sushant-Singh.jpg" alt="AIR Teaser" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Teaser | 03 Jul 25</div>
+        </div>
+
+                <div class="card small-card">
+          <img src="https://www.postergully.com/cdn/shop/products/SR467.jpg?v=1578633708" alt="AIR Teaser" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Teaser | 03 Jul 25</div>
+        </div>
+
+
+                <div class="card small-card">
+          <img src="https://m.media-amazon.com/images/M/MV5BNjViZDc3N2MtZThlNi00ZTc3LThiNzctZTg3YTM3YzExZGQxXkEyXkFqcGc@._V1_.jpg" alt="AIR Teaser" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Teaser | 03 Jul 25</div>
+        </div>
+        </div>
+        </div>
+ </section>
+
+      <section>
+        <div class="container">
+
+      <h2>Classic's</h2>
+      <div class="card-row">
+        <div class="card small-card">
+          <img src="https://m.media-amazon.com/images/I/71PAAJqpigL._UF1000,1000_QL80_.jpg" alt="AIR" />
+          <div class="episode-info">FIRST EPISODE FREE</div>
+        </div>
+        <div class="card small-card">
+          <img src="https://i.etsystatic.com/9537835/r/il/8c8f15/4024729613/il_570xN.4024729613_hww2.jpg" alt="AIR Trailer" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Trailer | 03 Jul 25</div>
+        </div>
+        <div class="card small-card">
+          <img src="https://www.tallengestore.com/cdn/shop/products/Sholay_-_Bollywood_Cult_Amitabh_Bachchan_Classic_Hindi_Movie_Poster_b017b7b4-9c36-4897-ac28-58065337acac.jpg?v=1570245959" alt="AIR Teaser" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Teaser | 03 Jul 25</div>
+        </div>
+          
+
+                <div class="card small-card">
+          <img src="https://www.tallengestore.com/cdn/shop/products/MotherIndia-Nargis-BollywoodClassicHindiMoviePoster_5601fbf1-46ee-4dd5-88da-1ccfd21bbd66_large.jpg?v=1675056041" alt="AIR Teaser" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Teaser | 03 Jul 25</div>
+        </div>
+
+                <div class="card small-card">
+          <img src="https://render.fineartamerica.com/images/images-profile-flow/400/images/artworkimages/mediumlarge/3/the-scent-of-a-woman-1992-movie-poster-retro-movie-posters.jpg" alt="AIR Teaser" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Teaser | 03 Jul 25</div>
+        </div>
+
+                <div class="card small-card">
+          <img src="https://good-hope.in/cdn/shop/files/bollywood_front_image_bollywood_1_1.webp?v=1739193822" alt="AIR Teaser" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Teaser | 03 Jul 25</div>
+        </div>
+
+
+                <div class="card small-card">
+          <img src="https://m.media-amazon.com/images/I/71Fxiu27deL._UF894,1000_QL80_.jpg" alt="AIR Teaser" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Teaser | 03 Jul 25</div>
+        </div>
+        </div>
+        </div>
+ </section>
+
+      <section>
+        <div class="container">
+
+      <h2>Folklore</h2>
+      <div class="card-row">
+        <div class="card small-card">
+          <img src="https://cf-img-a-in.tosshub.com/sites/visualstory/wp/2024/01/Snapinstaapp_379120236_1687743425035881_8377628124788145305_n_1080.jpg?size=*:900" alt="AIR" />
+          <div class="episode-info">FIRST EPISODE FREE</div>
+        </div>
+        <div class="card small-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKRGXmhsx3LGZqRBQDqaqDoIJo2CQyTTKM0Q&s" alt="AIR Trailer" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Trailer | 03 Jul 25</div>
+        </div>
+        <div class="card small-card">
+          <img src="https://i.pinimg.com/564x/5c/a2/16/5ca216c62a7f4e5b1d540edbe86fc43a.jpg" alt="AIR Teaser" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Teaser | 03 Jul 25</div>
+        </div>
+          
+
+                <div class="card small-card">
+          <img src="https://upload.wikimedia.org/wikipedia/en/4/4c/Kingston_film_poster.jpg" alt="AIR Teaser" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Teaser | 03 Jul 25</div>
+        </div>
+
+                <div class="card small-card">
+          <img src="https://cf-img-a-in.tosshub.com/sites/visualstory/wp/2024/01/Hanuman.jpg?size=*:900" alt="AIR Teaser" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Teaser | 03 Jul 25</div>
+        </div>
+
+                <div class="card small-card">
+          <img src="https://i.pinimg.com/originals/a3/55/83/a3558350a8f77d97d7ead34811cc1265.jpg" alt="AIR Teaser" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Teaser | 03 Jul 25</div>
+        </div>
+
+
+                <div class="card small-card">
+          <img src="https://i.pinimg.com/originals/8f/25/db/8f25db5d5f9a6d6fd3cdc7b993e8cb06.jpg" alt="AIR Teaser" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Teaser | 03 Jul 25</div>
+        </div>
+        </div>
+        </div>
+ </section>
+
+      <section>
+        <div class="container">
+
+      <h2>Family</h2>
+      <div class="card-row">
+        <div class="card small-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgRaT1JRnvNibkizJ6Ph41nXWLF07tUwHUJw&s" alt="AIR" />
+          <div class="episode-info">FIRST EPISODE FREE</div>
+        </div>
+        <div class="card small-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQof11TKJSMhb6prEpyCc8CpVOa5Lo2hx6vmQ&s" alt="AIR Trailer" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Trailer | 03 Jul 25</div>
+        </div>
+        <div class="card small-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBgj12cJLPce7iz2gyZw6c9L0U8lqVyhuy1Q&s" alt="AIR Teaser" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Teaser | 03 Jul 25</div>
+        </div>
+          
+
+                <div class="card small-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWg7F6OkWGM7MH-ALzHrVVDo-YsDTahPWenw&s" alt="AIR Teaser" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Teaser | 03 Jul 25</div>
+        </div>
+
+                <div class="card small-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKEoNfl4Kg-uNg7ZlAAx8OllfJepHH87f9OQ&s" alt="AIR Teaser" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Teaser | 03 Jul 25</div>
+        </div>
+
+                <div class="card small-card">
+          <img src="https://pbs.twimg.com/media/GjfBNi0aoAAXLES.jpg:large" alt="AIR Teaser" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Teaser | 03 Jul 25</div>
+        </div>
+
+
+                <div class="card small-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDDt5MH9fIYutPNh4o-LImiDNRvI0JFz2jOg&s" alt="AIR Teaser" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Teaser | 03 Jul 25</div>
+        </div>
+        </div>
+        </div>
+ </section>
+
+      <section>
+        <div class="container">
+
+      <h2>Action / Thriller</h2>
+      <div class="card-row">
+        <div class="card small-card">
+          <img src="https://images-platform.99static.com/d3besJXsX1JaBA4OvVHMZx4ohEM=/0x182:960x1142/500x500/top/smart/99designs-contests-attachments/84/84188/attachment_84188234" alt="AIR" />
+          <div class="episode-info">FIRST EPISODE FREE</div>
+        </div>
+        <div class="card small-card">
+          <img src="https://d3lzcn6mbbadaf.cloudfront.net/media/details/ANI-20230413025513.jpg" alt="AIR Trailer" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Trailer | 03 Jul 25</div>
+        </div>
+        <div class="card small-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBqbWEQG9sWdMMrueAjgIIB4BY4ZNZSRPp4w&s" alt="AIR Teaser" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Teaser | 03 Jul 25</div>
+        </div>
+          
+
+                <div class="card small-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgYRqwkEanHyzPdY6q4nOLinx4EdqngDicqg&s" alt="AIR Teaser" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Teaser | 03 Jul 25</div>
+        </div>
+
+                <div class="card small-card">
+          <img src="https://pbs.twimg.com/media/FFqvfnDVQAME7xF.jpg:large" alt="AIR Teaser" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Teaser | 03 Jul 25</div>
+        </div>
+
+                <div class="card small-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4zuzp0_EYrY3JIJ1iQE_9R5Ks2_nPV4_TbA&s" alt="AIR Teaser" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Teaser | 03 Jul 25</div>
+        </div>
+
+
+                <div class="card small-card">
+          <img src="https://c8.alamy.com/comp/2PRYNN5/inside-film-poster-willem-dafoe-2PRYNN5.jpg" alt="AIR Teaser" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Teaser | 03 Jul 25</div>
+        </div>
+        </div>
+        </div>
+ </section>
+
+      <section>
+        <div class="container">
+
+      <h2>Ugadi Utsavam</h2>
+      <div class="card-row">
+        <div class="card small-card">
+          <img src="https://images.filmibeat.com/ph-big/2023/03/telugu-movies-ugadi-special-poster-2023_167950679760.webp" alt="AIR" />
+          <div class="episode-info">FIRST EPISODE FREE</div>
+        </div>
+        <div class="card small-card">
+          <img src="https://images.filmibeat.com/ph-big/2023/03/telugu-movies-ugadi-special-poster-2023_167950679790.webp" alt="AIR Trailer" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Trailer | 03 Jul 25</div>
+        </div>
+        <div class="card small-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ8u4ALjJRxrevAXaxLpNPovGCDYKVmeXoGw&s" alt="AIR Teaser" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Teaser | 03 Jul 25</div>
+        </div>
+          
+
+                <div class="card small-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWaiU4B3Kzb5u2sKMEyexfZuJTdIonybHCkQ&s" alt="AIR Teaser" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Teaser | 03 Jul 25</div>
+        </div>
+
+                <div class="card small-card">
+          <img src="https://i.pinimg.com/736x/4e/28/ea/4e28ea519e3b2f03e97f8d6ac8aeaf7b.jpg" alt="AIR Teaser" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Teaser | 03 Jul 25</div>
+        </div>
+
+                <div class="card small-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQm1VMzDE8DSOefOQjemwTmEffgDGbwjpkNaA&s" alt="AIR Teaser" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Teaser | 03 Jul 25</div>
+        </div>
+
+
+                <div class="card small-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRymowVdIcUpvM04M-e2MghCXhkTl4aEnamdw&s" alt="AIR Teaser" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Teaser | 03 Jul 25</div>
+        </div>
+        </div>
+        </div>
+ </section>
+
+      <section>
+        <div class="container">
+
+      <h2>All Time Classics</h2>
+      <div class="card-row">
+        <div class="card small-card">
+          <img src="https://cdn.shopify.com/s/files/1/1057/4964/files/10-Best-Movie-Posters-of-All-Time_480x480.webp?v=1712251697" alt="AIR" />
+          <div class="episode-info">FIRST EPISODE FREE</div>
+        </div>
+        <div class="card small-card">
+          <img src="https://dl9fvu4r30qs1.cloudfront.net/7f/b6/526d0e674b20bba891e0aca04200/mulholland-drive.jpg" alt="AIR Trailer" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Trailer | 03 Jul 25</div>
+        </div>
+        <div class="card small-card">
+          <img src="https://i.pinimg.com/736x/0a/61/ff/0a61ff5ce2079954cc881d6ee20a757f.jpg" alt="AIR Teaser" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Teaser | 03 Jul 25</div>
+        </div>
+          
+
+                <div class="card small-card">
+          <img src="https://www.tallengestore.com/cdn/shop/products/Classic_Movie_Art_Poster_-_Octopussy_-_Tallenge_Hollywood_James_Bond_Poster_Collection_3129256a-f369-4816-8528-063c0e23e6ce.jpg?v=1533969948" alt="AIR Teaser" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Teaser | 03 Jul 25</div>
+        </div>
+
+                <div class="card small-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo4976ufWcNG4felwT2LptgZVjHm5ac7gIvQ&s" alt="AIR Teaser" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Teaser | 03 Jul 25</div>
+        </div>
+
+                <div class="card small-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSny3sXgssnmkuYNsyvyOMCVhNbsNL8wgUoPA&s" alt="AIR Teaser" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Teaser | 03 Jul 25</div>
+        </div>
+
+
+                <div class="card small-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYJmoR7AJH1ZMiZnx79VBtHfwKFXyXzOldJA&s" alt="AIR Teaser" />
+          <div class="play-icon">▶️</div>
+          <div class="episode-info">AIR Teaser | 03 Jul 25</div>
+        </div>
+        </div>
+        </div>
+ </section>
+
+
+<footer>
+  <section class="footer">
+    <div class="top-links">
+      <a href="#">About Us</a>
+      <a href="#">Contact Us</a>
+      <a href="#">Redeem</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms and Conditions</a>
+      <a href="#">FAQ</a>
+      <a href="#">Feedback</a>
+      <a href="#">Subscription</a>
+    </div>
+
+    <div class="footer-content">
+      <div class="left-section">
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/de/ETVnewLogo.png/200px-ETVnewLogo.png" alt="ETV Win Logo" class="footer-logo">
+        <p>© Eenadu Television Pvt. Ltd. 2025. All Rights Reserved</p>
+      </div>
+
+      <div class="middle-section">
+        <h4>Get in Touch with us.</h4>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-x-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <div class="middle-section">
+        <h4>Download App</h4>
+        <div class="app-buttons">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/2560px-Google_Play_Store_badge_EN.svg.png" alt="Google Play" class="store-img">
+          <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store" class="store-img">
+        </div>
+      </div>
+
+      <div class="platform-section">
+        <h4>Also Available on</h4>
+        <div class="platform-logos">
+          <span class="platform firetv"><i class="fas fa-fire"></i> FireTV</span>
+          <span class="platform samsung"><i class="fas fa-tv"></i> Samsung</span>
+          <span class="platform lg"><i class="fas fa-tv"></i> LG</span>
+          <span class="platform appletv"><i class="fab fa-apple"></i> TV</span>
+          <span class="platform googletv"><i class="fab fa-google"></i> TV</span>
+        </div>
+      </div>
+    </div>
+  </section>
+</footer>
+
+     <script src="script.js"></script> 
+
+</body>
+</html>
