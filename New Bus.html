@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bus Ticket Booking System</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+  <h1>🚌 Bus Ticket Booking</h1>
+  <div class="container">
+    <!-- Front Page -->
+    <div class="card active" id="front-page">
+      <div class="front-page">
+        <div class="bus">
+          <div class="wheel left"></div>
+          <div class="wheel right"></div>
+        </div>
+        <div class="road"></div>
+      </div>
+      
+      <!-- Registration Form -->
+      <div class="registration-form">
+        <h3>Register Your Details</h3>
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" placeholder="Enter your phone number" required>
+
+        <button onclick="startBooking()">Start Booking</button>
+      </div>
+    </div>
+
+    <!-- Bus List -->
+    <div class="card" id="bus-list" style="display: none;">
+      <h2>Select Bus</h2>
+      <ul>
+        <li onclick="selectBus('Bus A - Morning')">Morning Bus - VOYAGE RIDER</li>
+        <li onclick="selectBus('Bus B - Afternoon')">Afternoon Bus - TRANSIT TITAN</li>
+        <li onclick="selectBus('Bus C - Evening')">Evening Bus - ECO WANDERER</li>
+      </ul>
+    </div>
+
+    <!-- Booking Section -->
+    <div class="card" id="booking-section" style="display: none;">
+      <h2>Book for: <span id="selected-bus" style="color:#ff6f61"></span></h2>
+      <label for="from">From (District):</label>
+      <select id="from">
+        <option value="">-- Select District --</option>
+        <!-- Populate districts here -->
+      </select>
+
+      <label for="to">To (District):</label>
+      <select id="to">
+        <option value="">-- Select District --</option>
+        <!-- Populate districts here -->
+      </select>
+
+      <label for="block">Enter Block:</label>
+      <input type="text" id="block" placeholder="Enter block of the district">
+
+      <label for="date">Select Date:</label>
+      <input type="date" id="date">
+
+      <label for="time">Booking Time:</label>
+      <input type="time" id="time">
+
+      <label>Select Seats:</label>
+      <div class="seat-map" id="seat-map">
+        <!-- Seats will be generated here -->
+      </div>
+
+      <div style="margin-top: 10px; font-weight: bold;">
+        💰 Total Price: ₹<span id="total-price">0</span>
+      </div>
+
+      <button onclick="showPaymentSection()">Proceed to Payment</button>
+      <button onclick="goBackToBusList()">Back to Bus List</button>
+    </div>
+
+    <!-- Payment Section -->
+    <div class="card" id="payment-section" style="display: none;">
+      <h2>Payment Details</h2>
+      
+      <!-- Select Payment Method -->
+      <label for="payment-method">Select Payment Method:</label>
+      <select id="payment-method">
+        <option value="">-- Select Payment Method --</option>
+        <option value="credit-card">Credit/Debit Card</option>
+        <option value="phonepe">PhonePe</option>
+      </select>
+
+      <!-- Card Payment Details -->
+      <div id="card-payment" style="display: none;">
+        <label for="card-number">Card Number:</label>
+        <input type="text" id="card-number" placeholder="Enter your card number" required>
+
+        <label for="expiry-date">Expiry Date:</label>
+        <input type="text" id="expiry-date" placeholder="MM/YY" required>
+
+        <label for="cvv">CVV:</label>
+        <input type="text" id="cvv" placeholder="Enter CVV" required>
+      </div>
+
+      <!-- PhonePe Payment Details -->
+      <div id="phonepe-payment" style="display: none;">
+        <p>Proceed with PhonePe for payment. You will receive a prompt on your PhonePe app.</p>
+      </div>
+
+      <button onclick="confirmBooking()">Pay Now</button>
+      <button onclick="goBackToBooking()">Back to Booking</button>
+    </div>
+
+    <!-- Booking Confirmation Section -->
+    <div id="booking-confirmation" class="card" style="display: none;">
+      <h2>Payment Successful!</h2>
+      <p>Thank you for your payment. Your booking has been confirmed!</p>
+      <div id="confirmation-details"></div>
+      <button onclick="resetBooking()">Book Another Ticket</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+HTML
