@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sidhant | Portfolio</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Font -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    /* ===== Animated Section Title ===== */
+    .section-title span {
+      display: inline-block;
+      transition: 0.3s;
+    }
+    .section-title span:hover {
+      color: #22d3ee;
+      transform: translateY(-6px);
+      text-shadow: 0 0 10px #22d3ee;
+    }
+
+    /* ===== Skill Box ===== */
+    .skill-box {
+      background: linear-gradient(145deg, #020617, #111827);
+      padding: 20px;
+      text-align: center;
+      border-radius: 12px;
+      border: 1px solid #1f2937;
+      transition: 0.4s;
+    }
+    .skill-box:hover {
+      transform: scale(1.08);
+      background: linear-gradient(135deg, #22d3ee, #6366f1);
+      color: black;
+      font-weight: 600;
+    }
+
+    /* ===== Project Card ===== */
+    .project-card {
+      background: linear-gradient(145deg, #020617, #020617);
+      padding: 24px;
+      border-radius: 14px;
+      border: 1px solid #1f2937;
+      transition: 0.4s;
+    }
+    .project-card:hover {
+      transform: translateY(-12px);
+      border-color: #22d3ee;
+      box-shadow: 0 0 25px rgba(34,211,238,0.4);
+    }
+
+    /* ===== Inputs ===== */
+    .input {
+      width: 100%;
+      padding: 12px;
+      background: #020617;
+      border: 1px solid #1f2937;
+      border-radius: 8px;
+      color: white;
+    }
+  </style>
+</head>
+
+<body class="bg-gradient-to-b from-gray-950 via-gray-900 to-black text-white scroll-smooth">
+
+<!-- Navbar -->
+<nav class="fixed w-full bg-gray-950/90 backdrop-blur z-50 border-b border-gray-800">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    <h1 class="text-xl font-bold text-cyan-400">Sidhant.dev</h1>
+    <div class="space-x-6 hidden md:block">
+      <a href="#home" class="hover:text-cyan-400">Home</a>
+      <a href="#about" class="hover:text-cyan-400">About</a>
+      <a href="#skills" class="hover:text-cyan-400">Skills</a>
+      <a href="#projects" class="hover:text-cyan-400">Projects</a>
+      <a href="#contact" class="hover:text-cyan-400">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section id="home" class="min-h-screen flex items-center pt-20">
+  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+
+    <div>
+      <h2 class="text-4xl md:text-6xl font-bold mb-4">
+        Hi, I'm <span class="text-cyan-400">Sidhant Prasad Dash</span>
+      </h2>
+      <p class="text-gray-400 text-lg mb-6">
+        Frontend Developer crafting modern, responsive & user-friendly websites.
+      </p>
+
+      <div class="flex gap-4">
+        <a href="#projects" class="bg-cyan-400 text-gray-900 px-6 py-3 rounded-full font-semibold hover:bg-cyan-300 transition">
+          View Projects
+        </a>
+        <a href="https://drive.google.com/file/d/1y8OhJoGxg8VdPt1WuN2NB2YkWIP2MnAR/view?usp=drive_link" download class="border border-cyan-400 px-6 py-3 rounded-full text-cyan-400 hover:bg-cyan-400 hover:text-gray-900 transition">
+          Download CV
+        </a>
+      </div>
+    </div>
+
+    <div class="flex justify-center">
+      <img src="Sidhant.jpg"
+        class="w-72 h-72 rounded-full object-cover border-4 border-cyan-400 shadow-lg">
+    </div>
+
+  </div>
+</section>
+
+<!-- About -->
+<!-- About Me -->
+<section id="about" class="py-24 bg-gradient-to-r from-gray-900 via-gray-950 to-black">
+  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-14 items-center">
+
+    <!-- Left Content -->
+    <div>
+      <h3 class="text-4xl font-bold mb-6">
+        About <span class="text-cyan-400">Me</span>
+      </h3>
+
+      <p class="text-gray-300 leading-relaxed mb-4">
+        I’m a passionate <span class="text-white font-semibold">Frontend Developer</span>
+        who loves building clean, modern, and interactive user interfaces.
+        I enjoy transforming ideas into visually appealing and responsive web experiences.
+      </p>
+
+      <p class="text-gray-300 leading-relaxed mb-4">
+        I specialize in <span class="text-cyan-400">HTML, Tailwind CSS, JavaScript, and React</span>,
+        focusing on performance, accessibility, and pixel-perfect design.
+        My goal is to create websites that not only look great but also provide an excellent user experience.
+      </p>
+
+      <p class="text-gray-300 leading-relaxed">
+        I’m constantly learning new technologies and improving my skills to stay updated
+        with modern web trends. I enjoy working in team environments and turning challenges
+        into opportunities for growth.
+      </p>
+
+      <!-- Highlights -->
+      <div class="mt-8 grid grid-cols-2 gap-4">
+        <div class="bg-gray-800/60 p-4 rounded-xl text-center">
+          <h4 class="text-2xl font-bold text-cyan-400"></h4>
+        </div>
+        <div class="bg-gray-800/60 p-4 rounded-xl text-center">
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Side (Optional Design Box) -->
+    <div class="relative">
+      <div class="absolute -inset-1 bg-cyan-400/20 blur-2xl rounded-3xl"></div>
+      <div class="relative bg-gray-900 border border-gray-800 rounded-3xl p-8">
+        <h4 class="text-xl font-semibold mb-4 text-cyan-400">Why Choose Me?</h4>
+        <ul class="space-y-3 text-gray-300">
+          <li>✔ Clean & modern UI design</li>
+          <li>✔ Mobile-first responsive layouts</li>
+          <li>✔ Optimized & reusable code</li>
+          <li>✔ Strong attention to detail</li>
+          <li>✔ Passion for learning & growth</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Skills -->
+<section id="skills" class="py-20">
+  <div class="max-w-6xl mx-auto px-6">
+    <h3 class="text-3xl font-bold mb-10 section-title">
+      <span>S</span><span>k</span><span>i</span><span>l</span><span>l</span><span>s</span>
+    </h3>
+
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+      <div class="skill-box">HTML</div>
+      <div class="skill-box">CSS / Tailwind</div>
+      <div class="skill-box">JavaScript</div>
+      <div class="skill-box">React</div>
+      <div class="skill-box">Node.js</div>
+      <div class="skill-box">Git & GitHub</div>
+    </div>
+  </div>
+</section>
+
+<!-- Projects -->
+<section id="projects" class="py-20 bg-gradient-to-r from-gray-900 to-gray-950">
+  <div class="max-w-6xl mx-auto px-6">
+
+    <h3 class="text-3xl font-bold mb-10 section-title">
+      <span>P</span><span>r</span><span>o</span><span>j</span><span>e</span><span>c</span><span>t</span><span>s</span>
+    </h3>
+
+    <div class="grid md:grid-cols-3 gap-8">
+
+      <!-- Project 1 -->
+      <div class="project-card">
+        <h4 class="text-xl font-semibold mb-2">Portfolio Website</h4>
+        <p class="text-gray-400 mb-4">
+          Personal portfolio using Tailwind CSS.
+        </p>
+
+        <a href="http://127.0.0.1:5500/My%20Portfolio.html"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="text-cyan-400 hover:underline font-medium">
+          View Project →
+        </a>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card">
+        <h4 class="text-xl font-semibold mb-2">Bus Ticket Booking System</h4>
+        <p class="text-gray-400 mb-4">
+          Interactive JavaScript application.
+        </p>
+
+        <a href="New Bus.html"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="text-cyan-400 hover:underline font-medium">
+          View Project →
+        </a>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-card">
+        <h4 class="text-xl font-semibold mb-2">News Website</h4>
+        <p class="text-gray-400 mb-4">
+          Using The HTML And CSS.
+        </p>
+
+        <a href="index.html"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="text-cyan-400 hover:underline font-medium">
+          View Project →
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="py-20">
+  <div class="max-w-6xl mx-auto px-6">
+    <h3 class="text-3xl font-bold mb-6 text-cyan-400">Contact Me</h3>
+
+    <form class="max-w-md space-y-4">
+      <input type="text" placeholder="Your Name" class="input">
+      <input type="email" placeholder="Your Email" class="input">
+      <textarea rows="4" placeholder="Your Message" class="input"></textarea>
+      <button onclick="alert('Message sent! 🚀')" type="button"
+        class="bg-cyan-400 text-gray-900 px-6 py-3 rounded font-semibold w-full">
+        Send Message
+      </button>
+    </form>
+  </div>
+</section>
+<footer class="bg-gradient-to-r from-[#020617] to-[#0b1d3a] text-gray-400">
+
+  <!-- TOP -->
+  <div class="max-w-7xl mx-auto px-8 py-10 flex flex-col md:flex-row justify-between items-center gap-6">
+
+    <!-- NAME -->
+    <div>
+      <h2 class="text-2xl font-bold text-blue-400">Sidhant</h2>
+      <p class="text-gray-500">Web Developer</p>
+    </div>
+
+    <!-- EMAIL -->
+    <div class="flex w-full md:w-auto gap-3">
+      <input
+        type="email"
+        placeholder="Your email"
+        class="w-full md:w-[420px] px-4 py-3 rounded-lg bg-[#020617] border border-blue-700 text-white outline-none focus:border-blue-400"
+      >
+      <button class="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg text-white font-medium">
+        Subscribe
+      </button>
+    </div>
+
+  </div>
+
+  <!-- DIVIDER -->
+  <div class="max-w-7xl mx-auto border-t border-gray-700"></div>
+
+  <!-- BOTTOM -->
+  <div class="max-w-7xl mx-auto px-8 py-6 flex flex-col md:flex-row justify-between items-center gap-6">
+
+    <!-- COPYRIGHT -->
+    <p class="text-sm text-gray-500">
+      © 2025 Pradeep. All rights reserved.
+    </p>
+
+    <!-- SOCIAL ICONS (CENTER) -->
+    <div class="flex gap-6 text-blue-400 text-lg">
+
+      <a href="https://facebook.com" target="_blank" class="hover:text-blue-300 transition">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+
+      <a href="https://twitter.com" target="_blank" class="hover:text-blue-300 transition">
+        <i class="fab fa-twitter"></i>
+      </a>
+
+      <!-- ✅ LINKEDIN -->
+      <a href="https://www.linkedin.com/in/sidhant-prasad-dash-1b681b349?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BBlscvLITTDGDVZBWeWhC3w%3D%3D"
+         target="_blank"
+         class="hover:text-blue-300 transition">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+
+      <!-- ✅ GITHUB -->
+      <a href="https://github.com/YOUR_GITHUB_USERNAME"
+         target="_blank"
+         class="hover:text-blue-300 transition">
+        <i class="fab fa-github"></i>
+      </a>
+
+    </div>
+
+    <!-- LINKS -->
+    <div class="flex gap-6 text-sm">
+      <a href="#" class="text-blue-400 hover:underline">Privacy</a>
+      <a href="#" class="text-blue-400 hover:underline">Terms of Service</a>
+    </div>
+
+  </div>
+</footer>
+
+
+</body>
+</html>
